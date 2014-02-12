@@ -8,6 +8,6 @@ exports.projectInfo = function(req, res) { 
 		projectID = parseInt(projectID);
 	}
 
-  	var project = projects[projectID-1]; // of by one, our first project has index 0
+  	var project = projects[projectID-1]; // off by one, our first project has index 0
   	res.json(project);
 }
